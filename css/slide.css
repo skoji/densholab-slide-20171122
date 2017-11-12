@@ -1,29 +1,66 @@
 @page {
   size: A4 landscape;
 }
+
+@page :first {
+  counter-reset: page -1;
+}
+section {
+  font-size: 28pt;
+  margin: 0 1em;
+}
 .page {
   page-break-after: always;
 }
+.pgroup {
+  margin: 0 1em;
+}
+figure {
+  margin: 1em auto;
+}
+.fig-65 {
+  width: 65%;
+}
+figcaption {
+  font-size: 12pt;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+}
+
 h1 {
   font-size: 40pt;
 }
 h2 {
+  font-size: 32pt;
+}
+h3 {
   font-size: 28pt;
 }
-section:first-of-type h1{
+.pgroup {
+}
+.first-page h1 {
   font-size: 52pt;
+  text-align: center;
+  padding-top: 50mm;
+}
+.takahashi h1 {
+  font-size: 80pt;
   text-align: center;
   padding-top: 70mm;
 }
 
-section:first-of-type h2 {
+.first-page h2, .first-page h3 {
  text-align: center;
+ font-weight: normal;
 }
 
 @-epubx-page-template {
   .event-title {
     -epubx-flow-into: event-title;
     -epubx-flow-options: exclusive last static;
+    font-size: 12pt; 
   }
   .event-title-area {
     -epubx-flow-from: event-title;
@@ -34,12 +71,22 @@ section:first-of-type h2 {
   .slide-title {
     -epubx-flow-into: slide-title;
     -epubx-flow-options: exclusive last static;
+    font-size: 12pt; 
   }
   .slide-title-area {
     -epubx-flow-from: slide-title;
     bottom: 0;
     right: 1em;
     height: 2.5em;
+  }
+ .page-number-area {
+    content: "- " counter(page) " -" ;
+    width: 20%;
+    left: 40%;
+    right: 40%;
+    bottom: 0;
+    height: 2.5em;
+    text-align: center;
   }
   @-epubx-page-master {
     -epubx-page: 1;
@@ -54,7 +101,13 @@ section:first-of-type h2 {
       -epubx-flow-from: body;
       width: 100%; 
       padding: 0 1em;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 3em;
+      border-bottom: 1px solid #000000;
     }
+    @-epubx-partition page-number-area class(page-number-area) {}
     @-epubx-partition event-title-area class(event-title-area) {}
     @-epubx-partition slide-title-area class(slide-title-area) {}
   }
