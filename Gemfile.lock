@@ -1,0 +1,15 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    kpeg (1.1.0)
+    nora_mark (0.2beta19)
+      kpeg
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  nora_mark (>= 0.2beta19)
+
+BUNDLED WITH
+   1.15.4

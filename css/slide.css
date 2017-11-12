@@ -1,0 +1,61 @@
+@page {
+  size: A4 landscape;
+}
+.page {
+  page-break-after: always;
+}
+h1 {
+  font-size: 40pt;
+}
+h2 {
+  font-size: 28pt;
+}
+section:first-of-type h1{
+  font-size: 52pt;
+  text-align: center;
+  padding-top: 70mm;
+}
+
+section:first-of-type h2 {
+ text-align: center;
+}
+
+@-epubx-page-template {
+  .event-title {
+    -epubx-flow-into: event-title;
+    -epubx-flow-options: exclusive last static;
+  }
+  .event-title-area {
+    -epubx-flow-from: event-title;
+    bottom: 0;
+    left: 1em;
+    height: 2.5em;
+  }
+  .slide-title {
+    -epubx-flow-into: slide-title;
+    -epubx-flow-options: exclusive last static;
+  }
+  .slide-title-area {
+    -epubx-flow-from: slide-title;
+    bottom: 0;
+    right: 1em;
+    height: 2.5em;
+  }
+  @-epubx-page-master {
+    -epubx-page: 1;
+    @-epubx-partition body {
+      -epubx-flow-from: body;
+      width: 100%; 
+      padding: 0 1em;
+    }
+  }
+  @-epubx-page-master {
+    @-epubx-partition body {
+      -epubx-flow-from: body;
+      width: 100%; 
+      padding: 0 1em;
+    }
+    @-epubx-partition event-title-area class(event-title-area) {}
+    @-epubx-partition slide-title-area class(slide-title-area) {}
+  }
+}
