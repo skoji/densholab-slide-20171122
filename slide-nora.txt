@@ -107,7 +107,7 @@ image(img/torutaru-blame.png,トルタルの変更):
 
 手元に複数ファイルがなくても大丈夫。
 
-image.fig-50(img/delorean.jpg,デロリアン):Photograph by Kevin Abato  https://commons.wikimedia.org/wiki/File:Delorean_DMC-12_side.jpg
+image.fig-50(img/delorean.jpg,デロリアン  https://commons.wikimedia.org/wiki/File:Delorean_DMC-12_side.jpg):Photograph: Kevin Abato 
 
 # 複数人・同一ファイルへの修正作業
 
@@ -204,4 +204,5 @@ section.bookguide {
 * いわゆる入門書ではない
 * Gitがどのようなデータ構造をどのように扱っているか知りたくなったらおすすめ
 
-
+#(license) ライセンス 
+p.cc: [img(https://i.creativecommons.org/l/by-sa/3.0/88x31.png){CC by-sa}] この資料は[l(http://creativecommons.org/licenses/by-sa/3.0/){クリエイティブ・コモンズ 表示-継承 3.0 非移植 ライセンス}]の下で提供しています。

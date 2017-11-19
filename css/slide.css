@@ -67,6 +67,19 @@ img {
   width: auto;
   margin: 0 1em;
 }
+.license h1 {
+  display: none;
+}
+section.license {
+  padding-top: 70mm;
+}
+.cc {
+  font-size: 14pt;
+}
+.cc img {
+  height: 2em;
+  width: auto;
+}
 h1 {
   font-size: 40pt;
 }
