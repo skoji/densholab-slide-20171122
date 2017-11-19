@@ -5,8 +5,13 @@
 @page :first {
   counter-reset: page -1;
 }
+h1,h2,h3,h4,h5,h6 {
+  font-family: ToppanBunkyuMidashiGothicStdN-ExtraBold;
+}
+
 section {
   font-size: 28pt;
+  font-family: ToppanBunkyuGothicPr6N-Regular;
   margin: 0 1em;
 }
 .page {
