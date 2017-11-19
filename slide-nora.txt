@@ -30,6 +30,7 @@ image.fig-20(img/profile.png, プロフィール画像):
 バージョン管理システム（VCS）の一種。
 ほかにもMercurial（Hg）とかsubversion（svn）とか
 
+p.logo: [img(img/git-logo.png){git}] [img(img/hg-logo.svg){hg}] [img(img/svn-logo.png){svg}]
 # バージョン管理システムの目的は？ 
 
 バージョンを管理すること。
@@ -161,7 +162,7 @@ image.fig-65(img/github.png, githubはリモートリポジトリ):
 
 #(t) 最後に
 #(t) Gitは多機能
-#(t) 紙幅が足りない
+#(t) ごく一部しか説明できませんでした 
 #(t) でも
 #(t) ごく一部だけ知ってても便利
 #(t) まずは使ってみるのがおすすめです

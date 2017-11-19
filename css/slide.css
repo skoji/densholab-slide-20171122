@@ -58,6 +58,15 @@ img {
   max-width: 100%;
 }
 
+.logo {
+  margin-top: 2em;
+  text-align: center;
+}
+.logo img {
+  height: 4em;
+  width: auto;
+  margin: 0 1em;
+}
 h1 {
   font-size: 40pt;
 }
