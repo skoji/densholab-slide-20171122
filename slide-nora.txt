@@ -51,7 +51,7 @@ image.fig-65(img/level-0.png, 手動バージョン管理):
 # バージョン管理レベル１
 
 厳密な命名ルールの適用
-image.fig-65(img/level-1.png, 手動バージョン管理その2):
+image.fig-50(img/level-1.png, 手動バージョン管理その2):
 
 # バージョン管理レベル１ 
 
@@ -74,14 +74,125 @@ image.fig-65(img/manual-history.png, 手動履歴):
 # 人間はあてにならない
 image.fig-65(img/t-800.jpg,人類): Photograph: Dick Thomas Johnson  https://www.flickr.com/photos/31029865@N06/14997552775
 
-# バージョン管理システムが解決すること
-(パートに分けて書いていく）
-* 複数人の問題
-** 本質的に難しいこと、ほんとうは簡単なのに難しくなってしまうこと：同じ部分の同時変更は難しい。しかし同じ文書の違う章をいじっているなら本質的には簡単。
+# Gitが解決すること
 
-# バージョン管理システムの効果
+人類の間違いや怠慢を（ある程度）補助する
 
-# Wordの修正履歴は？
+# 例えば
 
-それで十分な場合もあります。GoogleDocumentの履歴でも。
-適材適所。
+image.fig-65(img/commit-message.png,怠惰なコミットメッセージ): 
+
+この怠惰なコメント
+
+# 変更点は機械的に確認できる
+image.fig-50(img/commit-diff.png,コミットの内容): [l(https://github.com/skoji/densholab-slide-20171122/commit/b654c7bbe0dfbb24462db71df1c198f5b12212d1){リンク}]
+
+# 誰がいつどこを変更したかも確認できる
+
+blameという機能です（名前が怖い）
+
+image(img/torutaru-blame.png,トルタルの変更):
+
+# Gitの効果
+
+怠惰の補助だけではありません
+
+# 過去の時点に戻るのが簡単
+
+履歴が管理されているから、手元に複数ファイルがなくても大丈夫。
+
+# 複数人・同一ファイルへの修正作業
+
+* 同じファイルを複数人で同時に修正しても大丈夫
+* 大丈夫じゃないことももちろんあります
+** 同じ行の修正など
+** でも普通は、別の人は別の場所をさわります
+** 大丈夫じゃないときも、ちゃんと修正する方法が用意されています
+
+# 分岐した履歴も扱える
+
+たとえば、改訂版を作りつつ、従来版の間違いを修正するとか。
+image(img/branch.png,ブランチの模式):
+
+# ほかにもいろいろあります。
+参考文献をご参照くださいませ
+[img.book(img/wakaba.jpg){わかばちゃんと学ぶGit使い方入門}] [img.book(img/git-pocket.jpg){【改訂新版】Gitポケットリファレンス}][img.book(img/nyumon_git.jpg){入門Git}]
+
+#(t) Gitの用語と概念
+## の基本部分
+# リポジトリと作業ツリー
+
+image(img/repo-tree.png,リポジトリにはGitのデータが入っていて、人間は作業ツリーで作業する):
+
+# addとコミット
+
+image.fig-65(img/commit-add.png,コミットすることで反映される):
+
+# addとコミット
+* addで作業ツリーの内容がインデックスに反映される
+* コミットでインデックスの内容がリポジトリに反映される
+* コミットは動詞兼名詞。
+** コミットするとコミット（オブジェクト）ができる。
+** 一連のコミット ≒ 履歴。
+
+
+# ローカルレポジトリと共有レポジトリ
+
+image(img/remote-local.png,リモートとローカルレポジトリ):
+
+# clone
+
+image(img/clone.png, リモートをローカルに複製する):
+
+# push
+
+image(img/push.png, ローカルの変更点をリモートに反映):
+
+# pull
+
+image(img/pull.png, リモートの変更点をローカルに反映):
+
+
+# GitとGitHub
+
+* Git ≠GitHub
+* GitHubはGitリモートレポジトリのホスティングサービス。
+image.fig-65(img/github.png, githubはリモートリポジトリ):
+
+#(t) 最後に
+#(t) Gitは多機能
+#(t) 紙幅が足りない
+#(t) でも
+#(t) ごく一部だけ知ってても便利
+#(t) まずは使ってみるのがおすすめです
+
+# 参考文献
+section.bookguide {
+[img.book(img/wakaba.jpg){わかばちゃんと学ぶGit使い方入門}]
+[l(http://www.hanmoto.com/bd/isbn/9784863542174){わかばちゃんと学ぶGit使い方入門}]
+}
+
+* 非エンジニアも対象
+* 内容が浅いわけではない
+
+# 参考文献 
+
+section.bookguide {
+[img.book(img/git-pocket.jpg){【改訂新版】Gitポケットリファレンス}]
+[l(http://www.hanmoto.com/bd/isbn/9784774185934){【改訂新版】Gitポケットリファレンス}]
+}
+
+* 概要・コマンドリファレンス・開発フローまで幅広くカバー。
+* ややエンジニア向け
+
+# 参考文献
+
+section.bookguide {
+[img.book(img/nyumon_git.jpg){入門Git}]
+[l(http://www.hanmoto.com/bd/isbn/9784798023809){入門Git}]
+}
+* Gitのメンテナによる書籍
+* いわゆる入門書ではない
+* Gitがどのようなデータ構造をどのように扱っているか知りたくなったらおすすめ
+
+
