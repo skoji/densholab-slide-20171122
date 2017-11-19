@@ -17,12 +17,15 @@ image.fig-20(img/profile.png, プロフィール画像):
 
 #(t) 空気とか地面
 
-# プログラマにとっては。
+# プログラマにとっては
+
+p.logo: [img(img/git-full-logo.png){git logo}]
 
 * そのくらい一般的
 * テキストものを管理するときは無意識に使っている
 ** この資料もGit管理
 * （ただし実はGitでなくても良い）
+
 
 #(t) あらためて
 #(t) Gitとはなにか？
@@ -33,7 +36,9 @@ image.fig-20(img/profile.png, プロフィール画像):
 p.logo: [img(img/git-logo.png){git}] [img(img/hg-logo.svg){hg}] [img(img/svn-logo.png){svg}]
 # バージョン管理システムの目的は？ 
 
-バージョンを管理すること。
+バージョン（版）を管理すること。
+
+image.fig-65(img/kappan.jpg,版といってもこれではなく): Photograph: Satoshi Kojima
 
 #(t) 何がうれしいの？
 
@@ -100,7 +105,9 @@ image(img/torutaru-blame.png,トルタルの変更):
 
 # 過去の時点に戻るのが簡単
 
-履歴が管理されているから、手元に複数ファイルがなくても大丈夫。
+手元に複数ファイルがなくても大丈夫。
+
+image.fig-50(img/delorean.jpg,デロリアン):Photograph by Kevin Abato  https://commons.wikimedia.org/wiki/File:Delorean_DMC-12_side.jpg
 
 # 複数人・同一ファイルへの修正作業
 
@@ -175,6 +182,7 @@ section.bookguide {
 
 * 非エンジニアも対象
 * 内容が浅いわけではない
+* むしろ濃い
 
 # 参考文献 
 
