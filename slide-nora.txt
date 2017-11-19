@@ -13,39 +13,40 @@ h3: 小嶋智
 
 image.fig-20(img/profile.png, プロフィール画像): 
 
-#(takahashi) Gitとはなにか？
+#(t) Gitとはなにか？
 
-#(takahashi) 空気とか地面
+#(t) 空気とか地面
 
 # プログラマにとっては。
 
-* そのくらい一般的です
-* テキストものを管理するには最強
-** この資料もGit管理です
+* そのくらい一般的
+* テキストものを管理するときは無意識に使っている
+** この資料もGit管理
 * （ただし実はGitでなくても良い）
 
-#(takahashi) あらためて
-#(takahashi) Gitとはなにか？
+#(t) あらためて
+#(t) Gitとはなにか？
 # Gitとは
 バージョン管理システム（VCS）の一種。
+ほかにもMercurial（Hg）とかsubversion（svn）とか
 
 # バージョン管理システムの目的は？ 
 
 バージョンを管理すること。
 
-#(takahashi) 何がうれしいの？
+#(t) 何がうれしいの？
 
 # バージョン管理レベルゼロ
 
 image.fig-65(img/level-0.png, 手動バージョン管理):
 
-#(takahashi) 最新版を修正…
+#(t) 最新版を修正…
 
 # この
 
 image.fig-65(img/level-0.png, 手動バージョン管理):
 
-#(takahashi) どれ
+#(t) どれ
 
 # バージョン管理レベル１
 
@@ -58,11 +59,11 @@ image.fig-65(img/level-1.png, 手動バージョン管理その2):
 
 image.fig-65(img/manual-history.png, 手動履歴):
 
-#(takahashi) レベル1の問題点
+#(t) レベル1の問題点
 
-#(takahashi) 人間は間違える
-#(takahashi) 人間は怠ける
-#(takahashi) 人間は忘れる
+#(t) 人間は間違える
+#(t) 人間は怠ける
+#(t) 人間は忘れる
 
 # 人間はこうなる
 * ルール・日付・変更点を間違える
