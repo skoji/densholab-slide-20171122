@@ -204,5 +204,3 @@ section.bookguide {
 * いわゆる入門書ではない
 * Gitがどのようなデータ構造をどのように扱っているか知りたくなったらおすすめ
 
-#(license) ライセンス 
-p.cc: [img(https://i.creativecommons.org/l/by-sa/3.0/88x31.png){CC by-sa}] この資料は[l(http://creativecommons.org/licenses/by-sa/3.0/){クリエイティブ・コモンズ 表示-継承 3.0 非移植 ライセンス}]の下で提供しています。
