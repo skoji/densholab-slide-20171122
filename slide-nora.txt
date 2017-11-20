@@ -57,7 +57,7 @@ image.fig-65(img/level-0.png, 手動バージョン管理):
 # バージョン管理レベル１
 
 厳密な命名ルールの適用
-image.fig-50(img/level-1.png, 手動バージョン管理その2):
+image.fig-60(img/level-1.png, 手動バージョン管理その2):
 
 # バージョン管理レベル１ 
 
