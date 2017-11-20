@@ -181,6 +181,14 @@ image(img/pull.png, リモートの変更点をローカルに反映):
 * GitHubはリモートレポジトリのホスティングサービス
 image.fig-65(img/github.png, githubはリモートリポジトリ):
 
+# PullRequest
+
+* PullRequestはGitHubの機能
+** Gitの機能ではない
+* 「この変更良かったらマージしてね！」という依頼。
+* （GitLabではMergeRequestと呼んでいる）
+* ちょっとやってみますね
+
 #(t) 最後に
 #(t) Gitは多機能
 #(t) 説明しきれません
