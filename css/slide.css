@@ -48,7 +48,6 @@ figure {
   text-align: center;
   font-size: 16pt;
 }
-
 figure.top-margin {
   margin-top: 2em;
 }
@@ -108,6 +107,9 @@ section.t h1 {
   padding-top: 50mm;
 }
 section.t h2 {
+  text-align: center;
+}
+section.t p {
   text-align: center;
 }
 

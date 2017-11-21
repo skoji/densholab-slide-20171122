@@ -189,6 +189,8 @@ image.fig-65(img/github.png, githubはリモートリポジトリ):
 * （GitLabではMergeRequestと呼んでいる）
 * ちょっとやってみますね
 
+#(t) PullRequest
+ このスライドの[l(https://github.com/skoji/densholab-slide-20171122/tree/describe-branch){ソース}]でデモ
 #(t) 最後に
 #(t) Gitは多機能
 #(t) 説明しきれません
