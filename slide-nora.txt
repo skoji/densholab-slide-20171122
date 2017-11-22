@@ -42,6 +42,9 @@ image.fig-65(img/kappan.jpg,版といってもこれではなく): Photograph: S
 
 #(t) 何がうれしいの？
 
+#(t) 覚醒
+## （バージョン管理に）
+
 # バージョン管理レベルゼロ
 
 image.fig-65(img/level-0.png, 手動バージョン管理):
@@ -54,6 +57,8 @@ image.fig-65(img/level-0.png, 手動バージョン管理):
 
 #(t) どれ
 
+#(t) これではいけない
+
 # バージョン管理レベル１
 
 厳密な命名ルールの適用
@@ -64,6 +69,8 @@ image.fig-60(img/level-1.png, 手動バージョン管理その2):
 変更履歴
 
 image.fig-65(img/manual-history.png, 手動履歴):
+
+#(t) これで解決…？
 
 #(t) レベル1の問題点
 
@@ -142,8 +149,24 @@ image.fig-65(img/commit-add.png,コミットすることで反映される):
 ** コミットするとコミットができる。
 ** 履歴 ＝ 一連のコミット
 
+# ブランチ
 
-# ローカルレポジトリと共有レポジトリ
+* 履歴 = 一連のコミット
+* 分岐した履歴 = ブランチ
+* [sp.note{（厳密には、分岐する前の履歴もそのブランチには含まれます）}]
+
+image(img/branch-is.png,それぞれがブランチ):
+
+# マージ
+
+* 分岐した歴史をもう一回混ぜるのがマージ
+* 複数人作業ではほぼ必ずマージが必要になります
+
+image(img/merge.png,合流がマージ):
+
+#(t) 共同作業
+
+# ローカルレポジトリとリモートレポジトリ
 
 image(img/remote-local.png,リモートとローカルレポジトリ):
 
@@ -159,6 +182,7 @@ image(img/push.png, ローカルの変更点をリモートに反映):
 
 image(img/pull.png, リモートの変更点をローカルに反映):
 
+#(t) GitHub 
 
 # GitとGitHub
 
@@ -166,6 +190,16 @@ image(img/pull.png, リモートの変更点をローカルに反映):
 * GitHubはリモートレポジトリのホスティングサービス
 image.fig-65(img/github.png, githubはリモートリポジトリ):
 
+# PullRequest
+
+* PullRequestはGitHubの機能
+** Gitの機能ではない
+* 「この変更良かったらマージしてね！」という依頼。
+* （GitLabではMergeRequestと呼んでいる）
+* ちょっとやってみますね
+
+#(t) PullRequest
+ このスライドの[l(https://github.com/skoji/densholab-slide-20171122/tree/describe-branch){ソース}]でデモ
 #(t) 最後に
 #(t) Gitは多機能
 #(t) 説明しきれません
